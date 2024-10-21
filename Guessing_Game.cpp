@@ -12,7 +12,7 @@ int main(int k){
     char response[n];
     cout<<"Welcome User,"<<endl
         <<"This is a Guessing Game in which you have to guess the random number."<<endl
-        <<"In Short THE UTIMATE TEST OF LUCK"<<endl
+        <<"In Short THE ULTIMATE TEST OF LUCK"<<endl
         <<"You will get "<<max_attempts<<" attempts."<<endl
         <<"Best of Luck. Let's Begin"<<endl;
     for(int i=1;i<=10;i++){
