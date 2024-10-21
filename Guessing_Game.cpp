@@ -5,9 +5,11 @@ using namespace std;
 int main(int k){
     srand(time(0));
     int random=rand() % 100 + 1;
-    int guess,attempts;
+    int guess;
+    int attempts=0;
     int max_attempts=10;
-    int n,response;
+    int n;
+    char response[n];
     cout<<"Welcome User,"<<endl
         <<"This is a Guessing Game in which you have to guess the random number."<<endl
         <<"In Short THE UTIMATE TEST OF LUCK"<<endl
@@ -37,9 +39,10 @@ int main(int k){
             cout<<"Too Low. Try again."<<endl;
         }
     }
-    cout<<"Do you want to play again(1 for yes/0 for no):";
+    cout<<"Do you want to play again(yes/no):";
     cin>>response;
-    if(response==1){
+    int length= strlen(response);
+    if(length==3){
         main(1);
     }
     else{
